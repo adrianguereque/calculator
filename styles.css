@@ -1,0 +1,69 @@
+
+body{
+    background-color: gray;
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 247, 237);
+    padding: 16px;
+    border-radius: 4%;
+}
+
+.buttons{
+    display: flex;
+    gap: 16px;
+    background-color: rgb(240, 240, 240);
+    padding: 8px;
+}
+
+.number-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 10px; /* Gap between buttons */
+}
+
+.zero{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.operator-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; /* Gap between buttons */
+}
+
+.operator-buttons button:hover{
+    background-color: black; /* Change the background color on hover */
+    color: white;
+}
+
+.number-buttons button{
+    background-color: rgba(169, 169, 169);
+    color: rgba(255, 255, 255, 0.886);
+}
+
+.number-buttons button:hover{
+    background-color: white; /* Change the background color on hover */
+    color: black; /* Change the text color on hover */
+}
+.number-buttons button, .operator-buttons button{
+    font-size: 30px;
+    border-radius: 8%;
+}
+
+.display{
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.338);
+    color: rgba(255, 255, 255, 0.886);
+    text-align: right;
+    padding-right: 6px;
+    border-radius: 4%;
+}
